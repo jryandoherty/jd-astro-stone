@@ -12,6 +12,7 @@
   "dependencies": {
     "@alpinejs/collapse": "3.12.3",
     "@astrojs/tailwind": "4.0.0",
+    "@fontsource/birthstone": "^5.2.8",
     "@fontsource/inter": "5.0.8",
     "@netlify/vite-plugin": "^2.6.1",
     "@types/alpinejs": "3.7.2",

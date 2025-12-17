@@ -1,3 +1,8 @@
+body {
+  background: url('/assets/bg-windows.png') no-repeat top right;
+  background-size: 50%;
+}
+
 .example {
   text-align: center;
   padding: 2rem;
@@ -5,16 +10,28 @@
   border-radius: 1rem;
 
   h1 {
-    color: $primary-color;
     font-size: clamp(1.5rem, 2vw, 2.5rem);
     margin-bottom: 0.5rem;
   }
 
   p {
-    color: $text-color;
     margin-bottom: 1rem;
   }
 
   button {
   }
+}
+
+.bg-barnred {
+  background: #8b2e2e;
+}
+
+.bg-window-white {
+  background-image: url('/assets/andrew-neel-w_bGL0Xfd3A-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.services-icon {
+  max-width: 120px;
 }

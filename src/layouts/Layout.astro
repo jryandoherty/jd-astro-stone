@@ -1,7 +1,8 @@
 ---
 import '@fontsource/inter/latin-400.css';
 import '@fontsource/inter/latin-500.css';
-import '../styles/extra.css';
+import '@fontsource/birthstone';
+import '../components/scss/extra.scss';
 import { ViewTransitions } from 'astro:transitions';
 import Footer from '../components/layout/Footer.astro';
 import Header from '../components/layout/Header.astro';
@@ -28,9 +29,7 @@ const { description, title } = Astro.props;
     <title>{title}</title>
     <ViewTransitions />
   </head>
-  <body
-    class="bg-primary-50 text-primary-950 antialiased transition dark:bg-primary-950 dark:text-primary-200"
-  >
+  <body class="bg-brand-white text-primary-950 antialiased transition">
     <Header />
     <main>
       <slot />

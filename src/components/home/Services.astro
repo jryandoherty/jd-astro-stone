@@ -1,18 +1,18 @@
 ---
 const services = [
   {
-    step: '01',
+    step: '/assets/wrench.png',
     name: 'Repair',
     description: 'Let us repair your existing windows before you spend thousands replacing them.',
   },
   {
-    step: '02',
+    step: '/assets/window-white.png',
     name: 'Restoration',
     description:
       'Even the oldest windows can be restored to their original beauty, and in the process, we can also enhance their functionality. Not to menttion, save you money!',
   },
   {
-    step: '03',
+    step: '/assets/building.png',
     name: 'Historic Restoration',
     description:
       'If you own a historic building, we can preserve their historical significance, ensuring that your building remains true to its heritage.',
@@ -27,10 +27,14 @@ const services = [
       <div class="grid gap-8 lg:grid-cols-3">
         {
           services.map((service) => (
-            <div class="bg-barnred flex flex-col gap-12  rounded-3xl px-6 py-8">
-              <p class="text-sm">{service.step}</p>
+            <div class="flex flex-col gap-12 rounded-3xl  bg-brand-red px-6 py-8">
+              <p class="text-center text-sm">
+                <img src={service.step} alt="icon" class="services-icon" />
+              </p>
               <div class="flex flex-col gap-4">
-                <h3 class="text-xl font-medium">{service.name}</h3>
+                <h3 class="font-decorative text-5xl font-medium text-brand-white">
+                  {service.name}
+                </h3>
                 <p class="text-base  text-primary-200/70 sm:text-lg">{service.description}</p>
               </div>
             </div>

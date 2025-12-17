@@ -11,9 +11,13 @@ module.exports = {
       transparent: 'transparent',
       white: '#ffffff',
       primary: colors.stone,
+      'brand-blue': '#2D3E50',
+      'brand-red': '#8B2E2E',
+      'brand-white': '#FAF5EF',
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
+      decorative: ['Birthstone', 'cursive'],
     },
     fontSize: {
       xs: ['0.75rem', '1rem'],

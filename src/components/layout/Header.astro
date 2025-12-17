@@ -9,7 +9,7 @@ const links = [
     href: '/about',
   },
   {
-    name: 'Pricing',
+    name: 'Learning about windows',
     href: '/pricing',
   },
   {
@@ -22,7 +22,7 @@ const links = [
 <header
   x-data="{ open: false }"
   class="transition"
-  :class="{ 'bg-primary-500/10 dark:bg-primary-400/10': open, 'bg-primary-50 dark:bg-primary-950': !(open) }"
+  :class="{ 'bg-primary-500/10': open, ' dark:bg-primary-950': !(open) }"
 >
   <div
     class="mx-auto flex max-w-2xl items-center justify-between px-4 py-4 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8"
@@ -34,7 +34,7 @@ const links = [
         class="rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200"
       >
         <span class="sr-only">Stone</span>
-        <img width="300" height="114" src="/assets/SVG/logo.svg" alt="Logo for JD Window Repair" />
+        <img width="280" height="106" src="/assets/SVG/logo.svg" alt="Logo for JD Window Repair" />
       </a>
     </div>
 
@@ -45,7 +45,7 @@ const links = [
       <!-- Toggle menu -->
       <button
         type="button"
-        class="inline-flex h-14 w-14 items-center justify-center rounded-full text-primary-950 ring-primary-950 transition hover:bg-primary-500/10 focus:outline-none focus-visible:ring-2 dark:text-primary-200 dark:hover:bg-primary-400/10"
+        class="inline-flex h-14 w-14 items-center justify-center rounded-full bg-brand-white text-primary-950 ring-primary-950 transition hover:bg-primary-500/10 focus:outline-none focus-visible:ring-2 dark:text-primary-200 dark:hover:bg-primary-400/10"
         @click="open = !open"
         @mousedown="if (open) $event.preventDefault()"
         aria-controls="website-menu"
@@ -92,14 +92,8 @@ const links = [
   >
     <div class="grid grid-cols-1 gap-16 pb-24 pt-6 lg:grid-cols-2 lg:pt-12">
       <div
-        class="hidden items-center justify-center rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10 lg:flex"
+        class="bg-window-white hidden items-center justify-center rounded-3xl bg-primary-500/10 px-6 py-8 lg:flex"
       >
-        <p
-          class="max-w-sm text-xl italic leading-loose text-primary-950/70 dark:text-primary-200/70"
-        >
-          <span class="font-medium">JD Window Repair and Restoration</span> has been in business for
-          over 30 years. We've helped homeowners restore their historic windows.
-        </p>
       </div>
 
       <!-- Navigation -->

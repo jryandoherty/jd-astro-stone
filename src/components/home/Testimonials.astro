@@ -2,24 +2,24 @@
 const testimonials = [
   {
     name: 'Rebecca Hayes',
-    description: 'Designer',
-    image: '/assets/testimonial-1.webp',
+    description: 'Boston, MA',
+
     message:
-      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+      '“David Liberty is an expert and reliable window restorer.  He and his team diagnose and fix problems with old and previously replaced windows without fuss and without unnecessary costs.”',
   },
   {
-    name: 'Rosa Spencer',
-    description: 'Team Leader',
-    image: '/assets/testimonial-2.webp',
+    name: 'The Jones Group',
+    description: 'Everett, MA',
+
     message:
-      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+      '“David and his assistant Joel at JD Window Restoration are absolutely phenomenal. David’s years of experience working with windows shows as he is able to solve any problem. I recently used him for a condo renovation where he made even the oldest windows work perfectly well. Definitely recommend and definitely will use again.”',
   },
   {
-    name: 'Christina Upton',
-    description: 'Manager',
-    image: '/assets/testimonial-3.webp',
+    name: 'Jessica',
+    description: 'Newton, MA',
+
     message:
-      '“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”',
+      '“I recently hired David and Joel from JD Window Restoration for three older windows in the Back Bay and was overall impressed. One sash needed a complete rebuild, and the quality of the work is outstanding.”',
   },
 ];
 ---
@@ -30,22 +30,17 @@ const testimonials = [
       <h2 class="mx-auto max-w-xl text-center text-3xl font-medium tracking-tight sm:text-4xl">
         Hear from our customers
       </h2>
-      <div
-        class="grid divide-y divide-primary-900/10 dark:divide-primary-300/10 lg:grid-cols-3 lg:divide-x lg:divide-y-0"
-      >
+      <div class="grid divide-y divide-primary-900/10 lg:grid-cols-3 lg:divide-x lg:divide-y-0">
         {
           testimonials.map((testimonial) => (
             <figure class="mx-auto flex max-w-lg flex-col items-center gap-6 py-8 lg:px-8 lg:py-0">
-              <blockquote class="text-center text-lg italic leading-loose text-primary-950/70 dark:text-primary-200/70">
+              <blockquote class="text-lg italic leading-loose text-primary-950/70">
                 <p>{testimonial.message}</p>
               </blockquote>
               <figcaption class="flex flex-col gap-4">
-                <img class="mx-auto h-8 w-8 rounded-full" src={testimonial.image} alt="" />
                 <div class="text-center">
                   <div class="text-base font-medium">{testimonial.name}</div>
-                  <div class="text-sm text-primary-950/70 dark:text-primary-200/70">
-                    {testimonial.description}
-                  </div>
+                  <div class="text-sm text-primary-950/70">{testimonial.description}</div>
                 </div>
               </figcaption>
             </figure>
