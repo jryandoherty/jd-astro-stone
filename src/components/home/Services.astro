@@ -15,7 +15,7 @@ const services = [
     step: '/assets/building.png',
     name: 'Historic Restoration',
     description:
-      'If you own a historic building, we can preserve their historical significance, ensuring that your building remains true to its heritage.',
+      'If you own a historic building, we can preserve its historical significance, ensuring that your building remains true to its heritage.',
   },
 ];
 ---
@@ -29,13 +29,13 @@ const services = [
           services.map((service) => (
             <div class="flex flex-col gap-12 rounded-3xl  bg-brand-red px-6 py-8">
               <p class="text-center text-sm">
-                <img src={service.step} alt="icon" class="services-icon" />
+                <img src={service.step} alt="icon" class="services-icon m-auto" />
               </p>
               <div class="flex flex-col gap-4">
-                <h3 class="font-decorative text-5xl font-medium text-brand-white">
+                <h3 class="text-center font-decorative text-5xl font-medium text-brand-white">
                   {service.name}
                 </h3>
-                <p class="text-base  text-primary-200/70 sm:text-lg">{service.description}</p>
+                <p class="text-base  text-brand-white sm:text-lg">{service.description}</p>
               </div>
             </div>
           ))

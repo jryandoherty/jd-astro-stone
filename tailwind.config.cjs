@@ -12,6 +12,7 @@ module.exports = {
       white: '#ffffff',
       primary: colors.stone,
       'brand-blue': '#2D3E50',
+      'brand-lightblue': '#a0d2f1',
       'brand-red': '#8B2E2E',
       'brand-white': '#FAF5EF',
     },
