@@ -13,8 +13,11 @@ module.exports = {
       primary: colors.stone,
       'brand-blue': '#2D3E50',
       'brand-lightblue': '#a0d2f1',
+      'brand-lightblue-hover': '#84c2e9',
+
       'brand-red': '#8B2E2E',
       'brand-white': '#FAF5EF',
+      black: '#000000',
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
