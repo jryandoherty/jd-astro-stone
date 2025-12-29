@@ -45,7 +45,13 @@ const questions = [
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="grid gap-12 lg:grid-cols-3 lg:gap-8">
       <div>
-        <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Frequently asked questions</h2>
+        <img
+          class="mx-auto h-auto w-full max-w-xl rounded-3xl"
+          width="576"
+          height="864"
+          src="/assets/andrew-neel-w_bGL0Xfd3A-unsplash.jpg"
+          alt="Our experts working together"
+        />
       </div>
       <div class="lg:col-span-2">
         <dl
@@ -57,12 +63,12 @@ const questions = [
               <div
                 class="rounded-3xl px-4 transition"
                 x-data={`{ id: ${index}, get isOpen() { return this.id === this.selected }, get isNextOpen() { return (this.id + 1) === this.selected } }`}
-                x-bind:class="{ 'bg-primary-500/10 dark:bg-primary-400/10': isOpen }"
+                x-bind:class="{ 'bg-brand-blue': isOpen }"
               >
                 <dt
                   class="border-b text-lg transition"
                   x-cloak
-                  x-bind:class="{ 'border-transparent': isOpen || isNextOpen, 'border-primary-900/10 dark:border-primary-300/10': !(isOpen || isNextOpen) }"
+                  x-bind:class="{ 'border-transparent': isOpen || isNextOpen, 'border-primary-900/10': !(isOpen || isNextOpen) }"
                 >
                   <button
                     type="button"
@@ -72,12 +78,14 @@ const questions = [
                     aria-expanded="false"
                     x-bind:aria-expanded="isOpen.toString()"
                   >
-                    <div class="flex items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200">
-                      <span class="font-medium">{question.title}</span>
+                    <div class="flex items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary-950">
+                      <span x-bind:class="{ 'text-brand-white': isOpen, 'text-brand-blue': !isOpen }">
+                        {question.title}
+                      </span>
                       <span class="ml-6 flex h-7 items-center">
                         <svg
-                          class="h-6 w-6 rotate-0 transform text-primary-600 transition duration-200 ease-in-out dark:text-primary-400"
-                          x-bind:class="{ '-rotate-180': isOpen, 'rotate-0': !isOpen }"
+                          class="h-6 w-6 rotate-0 transform text-primary-600 transition duration-200 ease-in-out"
+                          x-bind:class="{ '-rotate-180 text-white': isOpen, 'rotate-0 text-primary-600': !isOpen }"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
                           fill="currentColor"
@@ -90,13 +98,13 @@ const questions = [
                   </button>
                 </dt>
                 <dd class="pb-6 pr-6" id={question.id} x-show="isOpen" x-cloak x-collapse>
-                  <p class="text-base text-primary-950/70 dark:text-primary-200/70">
+                  <p class="text-base text-white">
                     {question.answer}
                     {question.link && (
                       <p class="mt-4">
                         <a
                           href={question.link}
-                          class="inline-flex items-center justify-center rounded-full border border-transparent bg-primary-600 px-5 py-3 text-base font-medium text-white transition hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                          class="hover:bg-brand-lightblue-hover text-black inline-flex items-center justify-center rounded-full border border-transparent bg-brand-lightblue px-5 py-3 text-base font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
                         >
                           {question.linktext ?? 'Learn more'}
                         </a>

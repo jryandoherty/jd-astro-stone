@@ -1,6 +1,9 @@
 body {
-  background: url('/assets/bg-windows.png') no-repeat top right;
-  background-size: 50%;
+  background: url('/assets/bg-windows-new.png') no-repeat top right;
+  @media (max-width: 1500px) {
+    background-size: 100%;
+    background: none;
+  }
 }
 
 .example {

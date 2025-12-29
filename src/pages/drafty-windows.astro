@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import Heading from '../components/articles/Heading.astro';
 
 import Layout from '../layouts/Layout.astro';
@@ -56,7 +57,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
       <div class="flex flex-col gap-16">
         <div class="flex flex-col items-start gap-8 sm:gap-10">
-          <div class="flex max-w-5xl flex-col items-start gap-4 sm:gap-6">
+          <div class="flex flex-col items-start gap-4 sm:gap-6">
             <p class="text-lg text-primary-950/70 sm:text-xl">
               <strong>The Truth About Modern Windows</strong>
             </p>
@@ -74,6 +75,14 @@ import Layout from '../layouts/Layout.astro';
               would solve.
             </p>
 
+            <img
+              class="mx-auto h-auto w-full max-w-xl rounded-3xl"
+              width="576"
+              height="864"
+              src="/assets/erik-mclean-RfkaDKptt-A-unsplash.jpg"
+              alt="Our experts working together"
+            />
+
             <p class="text-md text-primary-950/70 sm:text-xl">
               Other than those cases my contention is that old windows are always a better
               investment.
@@ -89,15 +98,59 @@ import Layout from '../layouts/Layout.astro';
               wall. Look at that whole assembly and ask — how ell do all the parts stop up that
               hole?
             </p>
+
+            <div class="mt-10 flex flex-col items-center justify-center">
+              <p class="text-center">
+                It is the junction of these parts that are the most frequnet culprits in causing
+                drafts:
+              </p>
+              <img
+                class="h-auto w-full rounded-3xl"
+                width="1280"
+                height="640"
+                src="/assets/storm-window.jpg"
+                alt="Hero picture"
+              />
+              <p class="text-center">
+                Where one piece of wood meets another and where the whole assembly meets the hole in
+                the wall; i.e. the perimeter
+              </p>
+            </div>
+
+            <p class="text-md mt-10 text-primary-950/70 sm:text-xl">
+              Stand back and look at a window -- the first thing that filled that hole was an
+              assembly of eood molding called trim, or wordwork. It usually looks pretty much the
+              same on the inside and outside: vertical and horizontal pieces framing the opening.
+              What you don't see is that these parts are actually enclosing a box of empty sapce
+              where the window weights go up and down. If that box is not sealed on the outside, it
+              allows wind and rain to enter the space and between your walls., bypassing whatever
+              storm windows and weatherstripping you have installed!
+            </p>
+
+            <p class="text-md text-primary-950/70 sm:text-xl">
+              So a good caulking job on all these areas often solves severe draft problems. Add a
+              good storm window and weatherstripping the orginal windows, and you have a window
+              assemblty as tight as you could want, and as good as any "modern" window!
+            </p>
+
+            <p class="text-md text-primary-950/70 sm:text-xl">
+              The secret of good caulking is that you are not laying a bead on the crack, you must
+              "tool" it in. The tool can simply be your finger, rag or modified pointing tool (grind
+              a round end). When done properly, a good caulking job should have restored the shape
+              and meet, and all around the permimeter. Look for voids at these junctions, cracks in
+              the wood itself, and separations around the perimeter. Use a good quality, longevity
+              guaranteed (25 to 50 year) exterior grade paintable caulk, usally acrylic latex with
+              silicone (not straight silicone), or vinyl.
+            </p>
+
+            <p class="text-md text-primary-950/70 sm:text-xl">
+              If you don't want to do it yourself, there are painters who can do it, but beware;
+              many painters only band-aid wood window trim: they simply paint over the cracks! It
+              takes a real pro to do it right. You can also look under "waterproofing" in the phone
+              book.
+            </p>
           </div>
         </div>
-        <img
-          class="h-auto w-full rounded-3xl"
-          width="1280"
-          height="640"
-          src="/assets/storm-window.jpg"
-          alt="Hero picture"
-        />
       </div>
     </div>
   </section>
